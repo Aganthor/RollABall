@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -34,10 +33,6 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             ++count;
             SetCountText();
-            if (count >= 12)
-            {
-                SceneManager.LoadScene("Level02", LoadSceneMode.Additive);
-            }
         }
     }
 
